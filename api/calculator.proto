@@ -1,0 +1,22 @@
+
+syntax = "proto3";
+
+package calculator;
+option go_package = "pkg/gogen";
+
+service CalculatorService {
+  rpc Add(DoubleRequest) returns (SingleResponse) {}
+  rpc Sub(DoubleRequest) returns (SingleResponse) {}
+  rpc Mul(DoubleRequest) returns (SingleResponse) {}
+  rpc Div(DoubleRequest) returns (SingleResponse) {}
+  rpc Mod(DoubleRequest) returns (SingleResponse) {}
+}
+
+message DoubleRequest {
+  int32 a = 1;
+  int32 b = 2;
+}
+
+message SingleResponse {
+  int32 res = 1;
+}
