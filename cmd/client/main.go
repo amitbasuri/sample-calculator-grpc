@@ -85,6 +85,6 @@ func handleRequest(handler HandlerFunc, a, b int) {
 	if err != nil {
 		log.Printf("%v\n", err)
 	} else {
-		log.Printf("res: %v\n", r.GetRes())
+		log.Printf("result: %v\n", r.GetRes())
 	}
 }

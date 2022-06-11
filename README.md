@@ -18,19 +18,19 @@
  ```shell
 %  go build  -o ./bin/client ./cmd/client
 %  ./bin/client -method add -a 5 -b 6
-2022/06/11 16:55:51 res: 11
+2022/06/11 16:55:51 result: 11
 %  ./bin/client -method sub -a 5 -b 6
-2022/06/11 16:56:05 res: -1
+2022/06/11 16:56:05 result: -1
 %  ./bin/client -method mul -a 2 -b 6
-2022/06/11 16:56:16 res: 12
+2022/06/11 16:56:16 result: 12
 %  ./bin/client -method mul -a 22 -b 3
-2022/06/11 16:56:32 res: 66
+2022/06/11 16:56:32 result: 66
 %  ./bin/client -method mul -a 2 -b 0 
-2022/06/11 16:56:39 res: 0
+2022/06/11 16:56:39 result: 0
 %  ./bin/client -method div -a 2 -b 0
 2022/06/11 16:56:53 rpc error: code = InvalidArgument desc = cannot divide by zero
 %  ./bin/client -method div -a 20 -b 3
-2022/06/11 16:57:00 res: 6
+2022/06/11 16:57:00 result: 6
   ```
 
 ### Compile proto file
