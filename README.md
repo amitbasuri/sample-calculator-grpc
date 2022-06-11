@@ -1,7 +1,14 @@
 ## Sample gRPC client and server
 
+## System Requirements
 
-### Example Usage
+#### Building the App
+[Go](https://go.dev/doc/install)
+
+#### Compile Protobuf
+[protoc](https://grpc.io/docs/protoc-installation/)
+
+## Example Usage
 ### Run Server
  ```shell
  go build  -o ./bin/server ./cmd/server

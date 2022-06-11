@@ -1,4 +1,4 @@
-module lovoo-assignment
+module calculator-server
 
 go 1.16
 
